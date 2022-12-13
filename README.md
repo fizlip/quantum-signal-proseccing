@@ -23,7 +23,7 @@ transitions probabilities can be modified using the signal rotation operator,
 
 `qsp` is the reverse of `qsp_seq`, given a polynomial it will approximate the 
 phase angle sequence that constructs the polynomial. This involves 
-quite heavy math. Initially a *remex type* exchange algorithm was used for this.
+quite heavy math. Initially a *remez type* exchange algorithm was used for this.
 This algorithm gave results only for small and simple polynomial (x^2, x + 1 etc.).
 The [`pyqsp`](https://github.com/ichuang/pyqsp) package made by Chuang et.al uses a `TensorFlow` model to approximate
 these with much better accuracy. Their model is used in this package as well.
