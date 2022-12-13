@@ -1,7 +1,7 @@
-# quantum-signal-proseccing
+# Quantum Signal Processing
 Quantum signal processing is built on interleaving 2 types of single-qubit rotations. A signal rotation operator and a signal processing operator. This repository includes classes that a demonstrate how these are combined into QSP control sequence which allow us to do signal processing on qubits.
 
-#Dependencies 
+# Dependencies 
 The main script uses TensorFlow to approximate values. 
 To run the script you need to have this installed, all 
 the dependencies are listed in in `requirements.txt` and
@@ -66,3 +66,4 @@ to get additional documentation about the script.
 # References
 This repository implements ideas put forth by [this paper](https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.040203) and [Chao et al.](https://github.com/alibaba-edu/angle-sequence)
 
+It was made as part of the course 'Seminar: Advanced Topics of Quantum Computing (IN2107,IN2183,IN0014)' at TUM.
