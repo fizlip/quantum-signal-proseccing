@@ -63,8 +63,8 @@ $ main.py -qsp 'np.cos(x**2)'
 
 ### Using Remez type exchange algorithm
 An alternative and much faster approach than the one above is to use a 
-Remez type exchange algorithm to approximate the angle sequence. This computed
-using
+Remez type exchange algorithm to approximate the angle sequence. This can be
+computed using
 ```
 $ main.py -qsp_remez 'x'
 ```
