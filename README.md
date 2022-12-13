@@ -68,8 +68,8 @@ computed using
 ```
 $ main.py -qsp_remez 'x'
 ```
-It is however much inferior to the TensorFlow implementation because it does not
-get very good results for polynomials of degree *n > 3*.
+It is however much inferior in accuracy to the TensorFlow implementation.
+Polynomials *n > 3* are not well approximated.
 
 ## Help
 Use
