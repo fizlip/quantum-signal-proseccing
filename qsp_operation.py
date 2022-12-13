@@ -20,7 +20,7 @@ Calculate the expectation value an angle phi
 @param phi: an angle in radians
 @return the expectation value for the angle.
 """
-def calculateExpectation(phi):
+def Evaluate(phi):
 
     current = start
     inc = 0.01
@@ -49,20 +49,35 @@ def calculateExpectation(phi):
         current += inc
     return data
 
+def PlotResponse(data):
+    phi_trivial = (0,0)
+    data_trivial    = Evaluate(phi_trivial)
 
-phi_trivial = (0,0)
-phi_bb1     = (math.pi/2, -eta, 2*eta, 0, -2*eta, eta)
+    # Plot the two expectation distributions
+    x = np.linspace(start, end, len(data_trivial))
+    plt.plot(x, data_trivial)
+    plt.plot(x, data)
 
-data_trivial    = calculateExpectation(phi_trivial)
-data_bb1        = calculateExpectation(phi_bb1)
+    plt.xlabel("theta")
+    plt.ylabel("Expectation (<0|U|0>)")
+    plt.title("Value of expectation as a function of theta")
+
+    plt.show()
+
+#eta = 0.5*math.acos(-0.25)
+
+#phi_bb1     = (math.pi/2, -eta, 2*eta, 0, -2*eta, eta)
+
+#data_trivial    = calculateExpectation(phi_trivial)
+#data_bb1        = calculateExpectation(phi_bb1)
 
 # Plot the two expectation distributions
-x = np.linspace(start, end, len(data_trivial))
-plt.plot(x, data_trivial)
+#x = np.linspace(start, end, len(data_trivial))
+#plt.plot(x, data_trivial)
 #plt.plot(x, data_bb1)
 
-plt.xlabel("theta")
-plt.ylabel("Expectation (<0|U|0>)")
-plt.title("Value of expectation as a function of theta")
+#plt.xlabel("theta")
+#plt.ylabel("Expectation (<0|U|0>)")
+#plt.title("Value of expectation as a function of theta")
 
-plt.show()
+#plt.show()
