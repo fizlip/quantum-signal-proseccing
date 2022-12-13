@@ -28,3 +28,26 @@ $ main.py -qsp_seq bb1
 
 ## QSP
 
+To calculate the phase angle sequence for a polynomial and plot the 
+resulting approximation use:
+
+```
+$ main.py -qsp 'x**2'
+```
+
+Non-trivial functions (e.g. cos(x)) can also be approximated using numpy:
+
+```
+$ main.py -qsp 'np.cos(x**2)'
+```
+
+## Help
+Use
+
+```
+$ main.py -help
+```
+
+to get additional documentation about the script.
+
+# References
