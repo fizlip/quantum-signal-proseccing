@@ -64,6 +64,6 @@ $ main.py -help
 to get additional documentation about the script.
 
 # References
-This repository implements ideas put forth by [this paper](https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.040203) and [Chao et al.](https://github.com/alibaba-edu/angle-sequence)
+This repository implements ideas put forth by [this paper](https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.040203) and [Chao et al.](https://github.com/alibaba-edu/angle-sequence). It also uses part of the accompanying [code base](https://github.com/ichuang/pyqsp).
 
 It was made as part of the course 'Seminar: Advanced Topics of Quantum Computing (IN2107,IN2183,IN0014)' at TUM.
