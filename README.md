@@ -1,5 +1,7 @@
 # Quantum Signal Processing
-Quantum signal processing is built on interleaving 2 types of single-qubit rotations. A signal rotation operator and a signal processing operator. This repository includes classes that a demonstrate how these are combined into QSP control sequence which allow us to do signal processing on qubits.
+Quantum signal processing is built on interleaving 2 types of single-qubit rotations. A signal rotation operator and a signal processing operator. This repository includes methods that demonstrate how these are combined into a *QSP control sequence* which allow us to do signal processing on qubits. The Quantum Signal Processing as a framework
+can be used to understand quantum algorithms like Hamiltonian simulation, quantum
+linear system solving etc.
 
 # Dependencies 
 The main script uses TensorFlow to approximate values. 
