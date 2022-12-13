@@ -64,3 +64,5 @@ $ main.py -help
 to get additional documentation about the script.
 
 # References
+This repository implements ideas put forth by [this paper](https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.040203) and [Chao et al.](https://github.com/alibaba-edu/angle-sequence)
+
