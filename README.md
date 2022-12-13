@@ -19,7 +19,10 @@ having to run the program!
 The script has two functions, `qsp_seq` and `qsp`. `qsp_sequence` evaluates the
 QSP sequence as defined in the paper by Martyn et.al. and demonstrates how 
 transitions probabilities can be modified using the signal rotation operator,
-W and the signal processing operator S.
+**W** and the signal processing operator **S**.
+
+`qsp` is the reverse of `qsp_seq`, given a polynomial it will approximate the 
+phase angle sequence that constructs the polynomial.
 
 ## QSP Sequence
 To evaluate the transition probabilities using the rotation operator and signal
