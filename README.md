@@ -61,6 +61,16 @@ Non-trivial functions (e.g. cos(x)) can also be approximated using numpy:
 $ main.py -qsp 'np.cos(x**2)'
 ```
 
+### Using Remez type exchange algorithm
+An alternative and much faster approach than the one above is to use a 
+Remez type exchange algorithm to approximate the angle sequence. This computed
+using
+```
+$ main.py -qsp_remex 'x'
+```
+It is however much inferior to the TensorFlow implementation because it does not
+get very good results for polynomials of degree *n > 3*.
+
 ## Help
 Use
 

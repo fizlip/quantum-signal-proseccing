@@ -7,6 +7,8 @@ from angle_sequence import QuantumSignalProcessingPhases
 from response import PlotQSPResponse 
 from poly import StringPolynomial
 
+from remez import Remez
+
 def main():
     '''
     Main function. Commands with corresponding arguments. 
@@ -48,6 +50,7 @@ def main():
     if(cmd == "qsp"):
 
         print(f"[main.py] Calculating phis for: {arg[0]}") 
+
         # Change degree of polynomial by passing an extra argument. 
         if(len(arg) == 2):
             poly = StringPolynomial(arg[0], arg[1])
@@ -59,6 +62,15 @@ def main():
 
         # This function plots the approximated polynomial and compares it to target
         PlotQSPResponse(ang_seq, target=poly, signal_operator="Wx")
+    if(cmd == "qsp_remez"):
+        print(f"[main.py] Calculating phis using Remez for: {arg[0]}") 
+        poly = StringPolynomial(arg[0], 10)
+        ang_seq = Remez(poly, 1) 
+
+        print(f"Angle sequqnce as calculated by Remez algorithm: {ang_seq}")
+
+        PlotQSPResponse(ang_seq, target=poly, signal_operator="Wx")
+
 
 if __name__ == '__main__':
     main()
